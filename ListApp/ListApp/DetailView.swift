@@ -21,7 +21,7 @@ struct DetailView: View {
                 .fontWeight(.heavy)
             Spacer()
         }
-        .navigationBarTitle(Text(country.name))
+        .navigationBarTitle(Text(country.name), displayMode: .inline)
     }
 }
 
