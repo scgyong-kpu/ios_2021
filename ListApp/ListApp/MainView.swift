@@ -7,6 +7,19 @@
 
 import SwiftUI
 
+struct CountryCell: View {
+    let country: Country
+    var body: some View {
+        NavigationLink(destination: DetailView(country: country)) {
+            HStack {
+                Image(country.file)
+                Text(country.name)
+                    .font(.subheadline)
+            }
+        }
+    }
+}
+
 struct MainView: View {
 
     var body: some View {
@@ -15,13 +28,7 @@ struct MainView: View {
                 ForEach (Nations.continents) { continent in
                     Section(header: Text(continent.region)) {
                         ForEach (continent.countries) { country in
-                            NavigationLink(destination: DetailView(country: country)) {
-                                HStack {
-                                    Image(country.file)
-                                    Text(country.name)
-                                        .font(.subheadline)
-                                }
-                            }
+                            CountryCell(country: country)
                         }
                     }
                 }
