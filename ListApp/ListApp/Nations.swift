@@ -21,7 +21,7 @@ struct Continent: Identifiable {
 }
 
 struct Nations {
-    static let contintents: [Continent] = [
+    static let continents: [Continent] = [
         Continent(region:"Africa, Middle East, and India",
          countries:[Country(name:"Armenia", file:"armenia.png"),
                     Country(name:"Botswana", file:"botswana.png"),
