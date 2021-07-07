@@ -1,0 +1,542 @@
+{ "albums" :[
+ {
+  "artistName" : "김태우",
+  "albumTitle" : "2집 T-School",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192131.jpg"
+ }
+ ,{
+  "artistName" : "걸스데이(Girl`s Day)",
+  "albumTitle" : "Girl`s Day Party #3 (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192502.jpg"
+ }
+ ,{
+  "artistName" : "이시영",
+  "albumTitle" : "위험한 상견례 OST Part 2",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192546.jpg"
+ }
+ ,{
+  "artistName" : "씨엔블루(CNBLUE)",
+  "albumTitle" : "정규1집 FIRST STEP",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192609.jpg"
+ }
+ ,{
+  "artistName" : "정엽",
+  "albumTitle" : "49일 OST Part 3",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192627.jpg"
+ }
+ ,{
+  "artistName" : "테이",
+  "albumTitle" : "반딧불 (후쿠야마 마사하루 리메이크)",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192633.jpg"
+ }
+ ,{
+  "artistName" : "Various Artists",
+  "albumTitle" : "서바이벌 나는 가수다 경연 1 (80년대 명곡 부르기)",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192634.jpg"
+ }
+ ,{
+  "artistName" : "Fukuyama Masaharu",
+  "albumTitle" : "The Best Bang!!",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192649.jpg"
+ }
+ ,{
+  "artistName" : "Duran Duran",
+  "albumTitle" : "All You Need Is Now",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192683.jpg"
+ }
+ ,{
+  "artistName" : "가을방학",
+  "albumTitle" : "오래된 커플 (Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192687.jpg"
+ }
+ ,{
+  "artistName" : "Chris Brown",
+  "albumTitle" : "F.A.M.E. (Deluxe Ver.)",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192706.jpg"
+ }
+ ,{
+  "artistName" : "윤하",
+  "albumTitle" : "It`s Beautiful (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192716.jpg"
+ }
+ ,{
+  "artistName" : "Hurts",
+  "albumTitle" : "Sunday (EP)",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192767.jpg"
+ }
+ ,{
+  "artistName" : "이소라",
+  "albumTitle" : "가시나무 새 OST Part 2",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192782.jpg"
+ }
+ ,{
+  "artistName" : "Green Day",
+  "albumTitle" : "Awesome As F**k",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192800.jpg"
+ }
+ ,{
+  "artistName" : "Panic! At The Disco",
+  "albumTitle" : "Vices &amp; Virtues",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192802.jpg"
+ }
+ ,{
+  "artistName" : "Ke$ha",
+  "albumTitle" : "I Am The Dance Commander + I Command You To Dance - The Remix Album (US Explicit Ver.)",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192836.jpg"
+ }
+ ,{
+  "artistName" : "임정희",
+  "albumTitle" : "로열패밀리 OST Part 3",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192847.jpg"
+ }
+ ,{
+  "artistName" : "허공,후니훈",
+  "albumTitle" : "New Story Part 1",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192855.jpg"
+ }
+ ,{
+  "artistName" : "이문세",
+  "albumTitle" : "욕망의 불꽃 OST",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192865.jpg"
+ }
+ ,{
+  "artistName" : "마야",
+  "albumTitle" : "아프다 슬프다 / 너무나... (EP)",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192868.jpg"
+ }
+ ,{
+  "artistName" : "Jennifer Hudson",
+  "albumTitle" : "I Remember Me",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192886.jpg"
+ }
+ ,{
+  "artistName" : "Jeff Beck",
+  "albumTitle" : "Rock `n` Roll Party (Honoring Les Paul)",
+  "image" : "http://scgyong.net/thumbs/slow.php/204_192887.jpg"
+ }
+ ,{
+  "artistName" : "씨엔블루(CNBLUE)",
+  "albumTitle" : "정규1집 FIRST STEP",
+  "image" : "http://scgyong.net/thumbs/slow.php/480_192609.jpg"
+ }
+ ,{
+  "artistName" : "윤하",
+  "albumTitle" : "It`s Beautiful (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/480_192716.jpg"
+ }
+ ,{
+  "artistName" : "김동률",
+  "albumTitle" : "Monologue",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_135518.jpg"
+ }
+ ,{
+  "artistName" : "자우림",
+  "albumTitle" : "7집 Ruby Sapphire Diamond",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_143184.jpg"
+ }
+ ,{
+  "artistName" : "정엽",
+  "albumTitle" : "1집 Thinkin` Back On Me",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_148950.jpg"
+ }
+ ,{
+  "artistName" : "이은미",
+  "albumTitle" : "소리 위를 걷다 (EP)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_154034.jpg"
+ }
+ ,{
+  "artistName" : "김윤아",
+  "albumTitle" : "1집 Shadow of Your Smile",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_1606.jpg"
+ }
+ ,{
+  "artistName" : "부활",
+  "albumTitle" : "25th Anniversary: Retrospect",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_160767.jpg"
+ }
+ ,{
+  "artistName" : "박정현",
+  "albumTitle" : "4집 Op.4",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_1659.jpg"
+ }
+ ,{
+  "artistName" : "이은미",
+  "albumTitle" : "소리 위를 걷다 2 (EP)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_172515.jpg"
+ }
+ ,{
+  "artistName" : "10cm",
+  "albumTitle" : "아메리카노 (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_177225.jpg"
+ }
+ ,{
+  "artistName" : "DCup, Yolanda Be Cool",
+  "albumTitle" : "We No Speak Americano",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_179529.jpg"
+ }
+ ,{
+  "artistName" : "아이유(IU)",
+  "albumTitle" : "Real",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_184117.jpg"
+ }
+ ,{
+  "artistName" : "수지(Suzy), 아이유(IU), 택연",
+  "albumTitle" : "드림하이 OST Part.1",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_186474.jpg"
+ }
+ ,{
+  "artistName" : "토이",
+  "albumTitle" : "4집 A Night In Seoul",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_1866.jpg"
+ }
+ ,{
+  "artistName" : "시크릿(Secret)",
+  "albumTitle" : "샤이보이 (Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_186699.jpg"
+ }
+ ,{
+  "artistName" : "현빈",
+  "albumTitle" : "시크릿 가든 OST Part.5",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_186817.jpg"
+ }
+ ,{
+  "artistName" : "부활",
+  "albumTitle" : "Collaboration Project +1",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_188490.jpg"
+ }
+ ,{
+  "artistName" : "마이티 마우스",
+  "albumTitle" : "2집 Mighty Fresh",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_188544.jpg"
+ }
+ ,{
+  "artistName" : "G.NA",
+  "albumTitle" : "1집 Black &amp; White",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_188584.jpg"
+ }
+ ,{
+  "artistName" : "나비(Navi)",
+  "albumTitle" : "1집 Hello",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_188622.jpg"
+ }
+ ,{
+  "artistName" : "김보경",
+  "albumTitle" : "The First Day",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_188942.jpg"
+ }
+ ,{
+  "artistName" : "10cm",
+  "albumTitle" : "1.0",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_189721.jpg"
+ }
+ ,{
+  "artistName" : "달마시안",
+  "albumTitle" : "달마시안 1st Mini Album",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_189904.jpg"
+ }
+ ,{
+  "artistName" : "Various Artists",
+  "albumTitle" : "드림하이 OST",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_189962.jpg"
+ }
+ ,{
+  "artistName" : "티엘(T.L)",
+  "albumTitle" : "그대와 나 (Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_189966.jpg"
+ }
+ ,{
+  "artistName" : "이현",
+  "albumTitle" : "내꺼중에 최고 (EP)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_189971.jpg"
+ }
+ ,{
+  "artistName" : "5dolls",
+  "albumTitle" : "Charming five girls",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_190139.jpg"
+ }
+ ,{
+  "artistName" : "아이유(IU)",
+  "albumTitle" : "Real + (EP)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_190154.jpg"
+ }
+ ,{
+  "artistName" : "간미연",
+  "albumTitle" : "WATCH (EP)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_190505.jpg"
+ }
+ ,{
+  "artistName" : "제이세라(J-Cera)",
+  "albumTitle" : "Endless Love (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_190906.jpg"
+ }
+ ,{
+  "artistName" : "빅뱅(Bigbang)",
+  "albumTitle" : "빅뱅 미니앨범",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_190928.jpg"
+ }
+ ,{
+  "artistName" : "송지은",
+  "albumTitle" : "미친거니 (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_191292.jpg"
+ }
+ ,{
+  "artistName" : "현빈",
+  "albumTitle" : "현빈, 가질 수 없는 너",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_191356.jpg"
+ }
+ ,{
+  "artistName" : "소리(Sori)",
+  "albumTitle" : "심장이 춤춘다 (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_191398.jpg"
+ }
+ ,{
+  "artistName" : "Avril Lavigne",
+  "albumTitle" : "Goodbye Lullaby",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_191585.jpg"
+ }
+ ,{
+  "artistName" : "SG워너비",
+  "albumTitle" : "가시나무 새 OST Part 1",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_191653.jpg"
+ }
+ ,{
+  "artistName" : "케이윌(K.will)",
+  "albumTitle" : "가슴이 뛴다 (EP)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_191769.jpg"
+ }
+ ,{
+  "artistName" : "다비치",
+  "albumTitle" : "웃어요, 엄마 OST Part 8",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_191828.jpg"
+ }
+ ,{
+  "artistName" : "SG워너비",
+  "albumTitle" : "7집 SG Wanna Be 7 Part 2",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_191918.jpg"
+ }
+ ,{
+  "artistName" : "동방신기",
+  "albumTitle" : "이것만은 알고 가 (Repackage)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_191990.jpg"
+ }
+ ,{
+  "artistName" : "비스트(Beast)",
+  "albumTitle" : "무지개 (후쿠야마 마사하루 리메이크)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192065.jpg"
+ }
+ ,{
+  "artistName" : "서영은",
+  "albumTitle" : "49일 OST Part 1",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192096.jpg"
+ }
+ ,{
+  "artistName" : "휘성",
+  "albumTitle" : "가슴 시린 이야기 (Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192105.jpg"
+ }
+ ,{
+  "artistName" : "김태우",
+  "albumTitle" : "2집 T-School",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192131.jpg"
+ }
+ ,{
+  "artistName" : "임정희",
+  "albumTitle" : "해바라기 (후쿠야마 마사하루 리메이크)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192215.jpg"
+ }
+ ,{
+  "artistName" : "가비엔제이(Gavy nj), 먼데이키즈(Monday Kiz)",
+  "albumTitle" : "소울트레인(Soul Train) Part 1",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192233.jpg"
+ }
+ ,{
+  "artistName" : "김보경",
+  "albumTitle" : "봄처럼",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192313.jpg"
+ }
+ ,{
+  "artistName" : "루싸이트 토끼",
+  "albumTitle" : "self (Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192336.jpg"
+ }
+ ,{
+  "artistName" : "2AM",
+  "albumTitle" : "최고의 사랑 (후쿠야마 마사하루 리메이크)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192371.jpg"
+ }
+ ,{
+  "artistName" : "인피니트(Infinite)",
+  "albumTitle" : "INSPIRIT (Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192393.jpg"
+ }
+ ,{
+  "artistName" : "유병열",
+  "albumTitle" : "Remember Of Gary Moore (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192413.jpg"
+ }
+ ,{
+  "artistName" : "Eric Benet",
+  "albumTitle" : "Lost In Time (Korea Tour Edition)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192425.jpg"
+ }
+ ,{
+  "artistName" : "나비(Navi)",
+  "albumTitle" : "49일 OST Part 2",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192438.jpg"
+ }
+ ,{
+  "artistName" : "제국의아이들",
+  "albumTitle" : "1집 Lovability",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192440.jpg"
+ }
+ ,{
+  "artistName" : "곰PD",
+  "albumTitle" : "1집 곰PD와 절묘한 친구들",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192448.jpg"
+ }
+ ,{
+  "artistName" : "한그루",
+  "albumTitle" : "My Boy (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192450.jpg"
+ }
+ ,{
+  "artistName" : "G.NA",
+  "albumTitle" : "Milk Tea (후쿠야마 마사하루 리메이크)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192458.jpg"
+ }
+ ,{
+  "artistName" : "걸스데이(Girl`s Day)",
+  "albumTitle" : "Girl`s Day Party #3 (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192502.jpg"
+ }
+ ,{
+  "artistName" : "Gypsian",
+  "albumTitle" : "Ready To Rumble (EP)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192526.jpg"
+ }
+ ,{
+  "artistName" : "이시영",
+  "albumTitle" : "위험한 상견례 OST Part 2",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192546.jpg"
+ }
+ ,{
+  "artistName" : "장민호",
+  "albumTitle" : "사랑해 누나 (Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192603.jpg"
+ }
+ ,{
+  "artistName" : "씨엔블루(CNBLUE)",
+  "albumTitle" : "정규1집 FIRST STEP",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192609.jpg"
+ }
+ ,{
+  "artistName" : "꽃별",
+  "albumTitle" : "숲의 시간",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192622.jpg"
+ }
+ ,{
+  "artistName" : "정엽",
+  "albumTitle" : "49일 OST Part 3",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192627.jpg"
+ }
+ ,{
+  "artistName" : "테이",
+  "albumTitle" : "반딧불 (후쿠야마 마사하루 리메이크)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192633.jpg"
+ }
+ ,{
+  "artistName" : "Various Artists",
+  "albumTitle" : "서바이벌 나는 가수다 경연 1 (80년대 명곡 부르기)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192634.jpg"
+ }
+ ,{
+  "artistName" : "Namy",
+  "albumTitle" : "Namy Colorful",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192680.jpg"
+ }
+ ,{
+  "artistName" : "가을방학",
+  "albumTitle" : "오래된 커플 (Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192687.jpg"
+ }
+ ,{
+  "artistName" : "야광토끼",
+  "albumTitle" : "1집 Seoulight",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192696.jpg"
+ }
+ ,{
+  "artistName" : "Zion I, Grouch",
+  "albumTitle" : "Heroes In The Healing Of The Nation",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192698.jpg"
+ }
+ ,{
+  "artistName" : "Ginuwine",
+  "albumTitle" : "Elgin",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192704.jpg"
+ }
+ ,{
+  "artistName" : "윤하",
+  "albumTitle" : "It`s Beautiful (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192716.jpg"
+ }
+ ,{
+  "artistName" : "크림팀(Creamteam)",
+  "albumTitle" : "러브콜 (Love Call) (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192726.jpg"
+ }
+ ,{
+  "artistName" : "이소라",
+  "albumTitle" : "가시나무 새 OST Part 2",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192782.jpg"
+ }
+ ,{
+  "artistName" : "Green Day",
+  "albumTitle" : "Awesome As F**k",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192800.jpg"
+ }
+ ,{
+  "artistName" : "Mindy Gledhill",
+  "albumTitle" : "Anchor",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192804.jpg"
+ }
+ ,{
+  "artistName" : "풀타임(Full Time)",
+  "albumTitle" : "한남자 두여자 (Digital Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192807.jpg"
+ }
+ ,{
+  "artistName" : "유나(Yuna)",
+  "albumTitle" : "Separation (Single)",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192808.jpg"
+ }
+ ,{
+  "artistName" : "Bitter:Sweet",
+  "albumTitle" : "Drama",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_192816.jpg"
+ }
+ ,{
+  "artistName" : "이소라",
+  "albumTitle" : "6집 눈썹달",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_29410.jpg"
+ }
+ ,{
+  "artistName" : "이은미",
+  "albumTitle" : "Ma Non Tanto",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_35120.jpg"
+ }
+ ,{
+  "artistName" : "김연우",
+  "albumTitle" : "3집 사랑을 놓치다",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_36743.jpg"
+ }
+ ,{
+  "artistName" : "자우림",
+  "albumTitle" : "6집 Ashes To Ashes",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_41815.jpg"
+ }
+ ,{
+  "artistName" : "임재범",
+  "albumTitle" : "4집 Story Of Two Years",
+  "image" : "http://scgyong.net/thumbs/slow.php/95_539.jpg"
+ }
+]}
