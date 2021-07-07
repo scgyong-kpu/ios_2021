@@ -15,6 +15,7 @@
 		3DA13DD726956642005769D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA13DD526956642005769D3 /* LaunchScreen.storyboard */; };
 		3DA13DE226956643005769D3 /* ListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA13DE126956643005769D3 /* ListAppTests.swift */; };
 		3DA13DED26956643005769D3 /* ListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA13DEC26956643005769D3 /* ListAppUITests.swift */; };
+		3DA13DFB2695702E005769D3 /* Nations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA13DFA2695702E005769D3 /* Nations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3DA13DE826956643005769D3 /* ListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA13DEC26956643005769D3 /* ListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppUITests.swift; sourceTree = "<group>"; };
 		3DA13DEE26956643005769D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA13DFA2695702E005769D3 /* Nations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3DA13DCA2695663F005769D3 /* AppDelegate.swift */,
 				3DA13DCC2695663F005769D3 /* SceneDelegate.swift */,
 				3DA13DCE2695663F005769D3 /* MainView.swift */,
+				3DA13DFA2695702E005769D3 /* Nations.swift */,
 				3DA13DD026956642005769D3 /* Assets.xcassets */,
 				3DA13DD526956642005769D3 /* LaunchScreen.storyboard */,
 				3DA13DD826956642005769D3 /* Info.plist */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA13DFB2695702E005769D3 /* Nations.swift in Sources */,
 				3DA13DCB2695663F005769D3 /* AppDelegate.swift in Sources */,
 				3DA13DCD2695663F005769D3 /* SceneDelegate.swift in Sources */,
 				3DA13DCF2695663F005769D3 /* MainView.swift in Sources */,
