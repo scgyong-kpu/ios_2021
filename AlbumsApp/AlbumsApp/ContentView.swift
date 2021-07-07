@@ -69,10 +69,13 @@ struct AlbumCell: View {
         //.frame(width: .infinity, height: 60, alignment: .center)
     }
     func loadAlbumImage() -> Image {
-        if image != nil { return image! }
-        print("Loading \(album.image)...")
+        if image != nil {
+            print("Already has image for \(album.image)")
+            return image!
+        }
+        //print("Loading \(album.image)...")
         return ImageStore.load(strUrl: album.image) { image in
-            print("Loaded: \(album.image)")
+            //print("Loaded: \(album.image)")
             self.image = image
         }
     }

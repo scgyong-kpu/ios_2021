@@ -16,19 +16,17 @@ class ImageStore {
             return Image(systemName: "tv.music.note")
         }
         
-        OperationQueue().addOperation {
-            guard let data = try? Data(contentsOf: url) else {
-                print("Failed to load from \(strUrl)")
-                return
+        NSLog("start: \(strUrl)")
+        URLSession.shared.dataTask(with: url) { data, resp, err in
+            var image: Image?
+            if let data = data {
+                if let uiImage = UIImage(data: data) {
+                    image = Image(uiImage: uiImage)
+                }
             }
-            
-            guard let uiImage = UIImage(data: data) else {
-                print("Not an image data: \(strUrl)")
-                return
-            }
-            
-            onDownload(Image(uiImage: uiImage))
-        }
+            NSLog("end: \(strUrl)")
+            onDownload(image ?? Image(systemName: "tv.music.note"))
+        }.resume()
 
         return Image(systemName: "tv.music.note")
     }
