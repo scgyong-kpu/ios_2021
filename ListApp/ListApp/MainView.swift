@@ -9,39 +9,49 @@ import SwiftUI
 
 struct Country: Identifiable {
     var id: String { name }
-    var name: String
+    let name: String
+}
+
+struct Continent: Identifiable {
+    let region: String
+    let countries: [Country]
+    var id: String { region }
 }
 
 struct MainView: View {
-    let countries = [
-        Country(name:"Egypt"),
-        Country(name:"Guinea-Bissau"),
-        Country(name:"Guinée"),
-        Country(name:"Guinée Equatoriale"),
-        Country(name:"India"),
-        Country(name:"Israel"),
-        Country(name:"Jordan"),
-        Country(name:"Kenya"),
-        Country(name:"Kuwait"),
-        Country(name:"Madagascar"),
-        Country(name:"Mali"),
-        Country(name:"Maroc"),
-        Country(name:"Mauritius"),
-        Country(name:"Mozambique"),
-        Country(name:"Niger"),
-        Country(name:"Nigeria"),
-        Country(name:"Oman"),
-        Country(name:"Qatar"),
-        Country(name:"Saudi Arabia"),
-        Country(name:"Sénégal"),
-        Country(name:"Uganda"),
-        Country(name:"South Africa"),
-        Country(name:"Tunisie"),
+    let continents = [
+        Continent(region: "Hello Continent", countries: [
+            Country(name:"Egypt"),
+            Country(name:"Guinea-Bissau"),
+            Country(name:"Guinée"),
+            Country(name:"Guinée Equatoriale"),
+            Country(name:"India"),
+            Country(name:"Israel"),
+            Country(name:"Jordan"),
+            Country(name:"Kenya"),
+            Country(name:"Kuwait"),
+            Country(name:"Madagascar"),
+            Country(name:"Mali"),
+            Country(name:"Maroc"),
+            Country(name:"Mauritius"),
+            Country(name:"Mozambique"),
+        ]),
+        Continent(region: "World Continent", countries: [
+            Country(name:"Niger"),
+            Country(name:"Nigeria"),
+            Country(name:"Oman"),
+            Country(name:"Qatar"),
+            Country(name:"Saudi Arabia"),
+            Country(name:"Sénégal"),
+            Country(name:"Uganda"),
+            Country(name:"South Africa"),
+            Country(name:"Tunisie"),
+        ]),
     ]
     var body: some View {
         List {
-            ForEach (countries) { country in
-                Text(country.name)
+            ForEach (continents) { continent in
+                Text(continent.region)
                     .padding()
             }
         }
