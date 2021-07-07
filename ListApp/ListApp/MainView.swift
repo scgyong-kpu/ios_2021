@@ -10,18 +10,21 @@ import SwiftUI
 struct MainView: View {
 
     var body: some View {
-        List {
-            ForEach (Nations.continents) { continent in
-                Section(header: Text(continent.region)) {
-                    ForEach (continent.countries) { country in
-                        HStack {
-                            Image(country.file)
-                            Text(country.name)
-                                .font(.subheadline)
+        NavigationView {
+            List {
+                ForEach (Nations.continents) { continent in
+                    Section(header: Text(continent.region)) {
+                        ForEach (continent.countries) { country in
+                            HStack {
+                                Image(country.file)
+                                Text(country.name)
+                                    .font(.subheadline)
+                            }
                         }
                     }
                 }
             }
+            .navigationBarTitle(Text("Countries"))
         }
     }
 }
