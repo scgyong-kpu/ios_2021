@@ -42,6 +42,17 @@ struct AlbumCell: View {
                 Text(album.artistName)
                     .multilineTextAlignment(.leading)
             }
+        }.frame(width: .infinity, height: 60, alignment: .center)
+    }
+}
+
+struct AlbumCell_Previews: PreviewProvider {
+    static var previews: some View {
+        List {
+            AlbumCell(album: Album(albumTitle: "Hello title", artistName: "Hello name", image: "url"))
+            AlbumCell(album: Album(albumTitle: "Some very long album title blah blah blah hello world", artistName: "World name", image: "url"))
+            AlbumCell(album: Album(albumTitle: "World title", artistName: "A very long artist name World name", image: "url"))
+            AlbumCell(album: Album(albumTitle: "Some very long album title blah blah blah hello world", artistName: "A very long artist name World name", image: "url"))
         }
     }
 }
