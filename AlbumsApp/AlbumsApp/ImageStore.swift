@@ -24,8 +24,10 @@ class ImageStore {
                     image = Image(uiImage: uiImage)
                 }
             }
-            NSLog("end: \(strUrl)")
-            onDownload(image ?? Image(systemName: "tv.music.note"))
+            OperationQueue.main.addOperation {
+                NSLog("end: \(strUrl)")
+                onDownload(image ?? Image(systemName: "tv.music.note"))
+            }
         }.resume()
 
         return Image(systemName: "tv.music.note")
