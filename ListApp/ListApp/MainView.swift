@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct Country {
-    var id = UUID()
+struct Country: Identifiable {
+    var id: String { name }
     var name: String
 }
 
@@ -34,14 +34,14 @@ struct MainView: View {
         Country(name:"Qatar"),
         Country(name:"Saudi Arabia"),
         Country(name:"Sénégal"),
+        Country(name:"Uganda"),
         Country(name:"South Africa"),
         Country(name:"Tunisie"),
-        Country(name:"Uganda"),
     ]
     var body: some View {
         List {
-            ForEach (names) { name in
-                Text(name)
+            ForEach (countries) { country in
+                Text(country.name)
                     .padding()
             }
         }
