@@ -14,7 +14,11 @@ struct MainView: View {
             ForEach (Nations.continents) { continent in
                 Section(header: Text(continent.region)) {
                     ForEach (continent.countries) { country in
-                        Text(country.name)
+                        HStack {
+                            Image(country.file)
+                            Text(country.name)
+                                .font(.subheadline)
+                        }
                     }
                 }
             }
