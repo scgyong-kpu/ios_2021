@@ -7,27 +7,29 @@
 
 import SwiftUI
 
+extension String: Identifiable {
+    public var id: String { self }
+}
+
 struct MainView: View {
+    let names = [
+        "Hello",
+        "World",
+        "Hello",
+        "World",
+        "Hello",
+        "World",
+        "Hello",
+        "World",
+        "Hello",
+        "World",
+    ]
     var body: some View {
         List {
-            Text("Hello, world! 1")
-                .padding()
-            Text("Hello, world! 2")
-                .padding()
-            Text("Hello, world! 3")
-                .padding()
-            Text("Hello, world! 1")
-                .padding()
-            Text("Hello, world! 2")
-                .padding()
-            Text("Hello, world! 3")
-                .padding()
-            Text("Hello, world! 1")
-                .padding()
-            Text("Hello, world! 2")
-                .padding()
-            Text("Hello, world! 3")
-                .padding()
+            ForEach (names) { name in
+                Text(name)
+                    .padding()
+            }
         }
     }
 }
