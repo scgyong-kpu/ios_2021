@@ -51,8 +51,11 @@ struct MainView: View {
     var body: some View {
         List {
             ForEach (continents) { continent in
-                Text(continent.region)
-                    .padding()
+                Section(header: Text(continent.region)) {
+                    ForEach (continent.countries) { country in
+                        Text(country.name)
+                    }
+                }
             }
         }
     }
