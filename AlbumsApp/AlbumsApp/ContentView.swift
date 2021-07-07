@@ -49,9 +49,10 @@ struct ContentView_Previews: PreviewProvider {
 
 struct AlbumCell: View {
     let album: Album
+    @State var image: Image?
     var body: some View {
         HStack {
-            ImageStore.load(strUrl: album.image)
+            loadAlbumImage()
                 .resizable()
                 .frame(width: 56, height: 56, alignment: .center)
             VStack(alignment: .leading) {
@@ -67,6 +68,14 @@ struct AlbumCell: View {
         }
         //.frame(width: .infinity, height: 60, alignment: .center)
     }
+    func loadAlbumImage() -> Image {
+        if image != nil { return image! }
+        print("Loading \(album.image)...")
+        return ImageStore.load(strUrl: album.image) { image in
+            print("Loaded: \(album.image)")
+            self.image = image
+        }
+    }
 }
 
 struct AlbumCell_Previews: PreviewProvider {
@@ -75,7 +84,7 @@ struct AlbumCell_Previews: PreviewProvider {
             AlbumCell(album: Album(albumTitle: "Hello title", artistName: "Hello name", image: "url"))
             AlbumCell(album: Album(albumTitle: "Some very long album title blah blah blah hello world", artistName: "World name", image: "url"))
             AlbumCell(album: Album(albumTitle: "World title", artistName: "A very long artist name World name", image: "url"))
-            AlbumCell(album: Album(albumTitle: "Some very long album title blah blah blah hello world", artistName: "A very long artist name World name and longer and longer", image: "url"))
+            AlbumCell(album: Album(albumTitle: "Some very long album title blah blah blah hello world", artistName: "A very long artist name World name and longer and longer", image: "http://scgyong.net/thumbs/slow.php/204_192546.jpg"))
         }
     }
 }
