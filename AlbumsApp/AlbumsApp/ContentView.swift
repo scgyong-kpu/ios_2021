@@ -33,7 +33,7 @@ struct AlbumCell: View {
     let album: Album
     var body: some View {
         HStack {
-            Image(systemName: "wifi")
+            ImageStore.load(strUrl: album.image)
             VStack {
                 Text(album.albumTitle)
                     .font(.subheadline)
