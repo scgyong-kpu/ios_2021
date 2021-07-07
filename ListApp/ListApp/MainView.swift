@@ -15,7 +15,7 @@ struct MainView: View {
                 ForEach (Nations.continents) { continent in
                     Section(header: Text(continent.region)) {
                         ForEach (continent.countries) { country in
-                            NavigationLink(destination: Text(country.name)) {
+                            NavigationLink(destination: DetailView(country: country)) {
                                 HStack {
                                     Image(country.file)
                                     Text(country.name)

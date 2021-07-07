@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D152F892695786500F8ADBB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D152F882695786500F8ADBB /* DetailView.swift */; };
 		3DA13DCB2695663F005769D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA13DCA2695663F005769D3 /* AppDelegate.swift */; };
 		3DA13DCD2695663F005769D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA13DCC2695663F005769D3 /* SceneDelegate.swift */; };
 		3DA13DCF2695663F005769D3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA13DCE2695663F005769D3 /* MainView.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D152F882695786500F8ADBB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		3DA13DC72695663F005769D3 /* ListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA13DCA2695663F005769D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DA13DCC2695663F005769D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				3DA13DD526956642005769D3 /* LaunchScreen.storyboard */,
 				3DA13DD826956642005769D3 /* Info.plist */,
 				3DA13DD226956642005769D3 /* Preview Content */,
+				3D152F882695786500F8ADBB /* DetailView.swift */,
 			);
 			path = ListApp;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				3DA13DFB2695702E005769D3 /* Nations.swift in Sources */,
 				3DA13DCB2695663F005769D3 /* AppDelegate.swift in Sources */,
 				3DA13DCD2695663F005769D3 /* SceneDelegate.swift in Sources */,
+				3D152F892695786500F8ADBB /* DetailView.swift in Sources */,
 				3DA13DCF2695663F005769D3 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
