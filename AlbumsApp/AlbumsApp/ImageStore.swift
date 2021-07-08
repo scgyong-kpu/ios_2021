@@ -21,7 +21,7 @@ class ImageStore {
             print("Invalid URL:\(strUrl)")
             return Image(systemName: "tv.music.note")
         }
-        
+        	
         NSLog("start: \(strUrl)")
         URLSession.shared.dataTask(with: url) { data, resp, err in
             var image: Image?
