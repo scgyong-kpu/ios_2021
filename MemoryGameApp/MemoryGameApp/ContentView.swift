@@ -33,7 +33,7 @@ struct ContentView: View {
                                 showsRestartAlert = true
                             }
                         }
-                    CardView(prefix: "f", number: card.number, count: 8, open: card.cardState == .open)
+                    CardView(prefix: "f", number: card.number, open: card.cardState == .open)
                         .gesture(gesture)
                 }
             }
