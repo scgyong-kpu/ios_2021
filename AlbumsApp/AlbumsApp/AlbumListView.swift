@@ -23,7 +23,7 @@ extension Color {
     }
 }
 
-struct ContentView: View {
+struct AlbumListView: View {
     var body: some View {
         List {
             ForEach (AlbumStore.singleton.albums) { album in
@@ -37,7 +37,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AlbumListView()
     }
 }
 
