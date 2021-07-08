@@ -44,27 +44,34 @@ class MemoryGame: ObservableObject {
         return cards[row * 3 + col].number
     }
     func toggle(row: Int, col: Int) {
-        let openCard = openIndex != nil ? cards[openIndex!] : nil
-        
         let index = row * 3 + col
-        var card = cards[index]
+        let card = cards[index]
         
         switch (card.cardState) {
         case .closed:
-            card.cardState = .open
-            if (openCard?.number == card.number) {
-                remove(at: index)
-                remove(at: openIndex!)
-                openIndex = nil
+            cards[index].cardState = .open
+            guard let oidx = openIndex else {
+                openIndex = index
+                break
             }
+            let openCard = cards[oidx]
+            if openCard.number != card.number {
+                print("Different card: \(index) - \(oidx)")
+                openIndex = index
+                cards[oidx].cardState = .closed
+                break
+            }
+            remove(at: index)
+            remove(at: openIndex!)
+            self.openIndex = nil
         case .open:
-            card.cardState = .closed
+            cards[index].cardState = .closed
         default:
             break
         }
-        cards[row * 3 + col] = card
     }
     func remove(at index: Int) {
+        print("Removing \(index)")
         cards[index].cardState = .removed
     }
 }
