@@ -12,7 +12,7 @@ struct ContentView: View {
     let prefix: String
     @ObservedObject var game = MemoryGame()
     @State var showsRestartAlert = false
-    
+    @Environment(\.presentationMode) var present
     var body: some View {
         VStack {
             HStack {
@@ -40,11 +40,24 @@ struct ContentView: View {
             }
             .aspectRatio(CGSize(width: MemoryGame.cols, height: MemoryGame.rows), contentMode: ContentMode.fit)
             Spacer()
-            Button(action: { showsRestartAlert = true }) {
-                Text("Restart game")
-                    .padding(.horizontal, 30)
-                    .padding(.vertical, 5)
-                    .background(Capsule().stroke(lineWidth: 2.0))
+            HStack {
+                Spacer()
+                Button(action: {
+                    present.wrappedValue.dismiss()
+                }) {
+                    Text("Back")
+                        .padding(.horizontal, 30)
+                        .padding(.vertical, 5)
+                        .background(Capsule().stroke(lineWidth: 2.0))
+                }
+                Spacer()
+                Button(action: { showsRestartAlert = true }) {
+                    Text("Restart")
+                        .padding(.horizontal, 30)
+                        .padding(.vertical, 5)
+                        .background(Capsule().stroke(lineWidth: 2.0))
+                }
+                Spacer()
             }
             Spacer()
         }
