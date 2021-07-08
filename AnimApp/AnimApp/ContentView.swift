@@ -45,9 +45,18 @@ struct ContentView: View {
                     .scaleEffect(scale)
             }
             if visibility {
-                Text("Hello").font(.largeTitle)
+                Text("Slide").font(.largeTitle)
+                    .transition(.slide)
             } else {
-                Text("World").font(.largeTitle)
+                Text("Scale").font(.largeTitle)
+                    .transition(.scale)
+            }
+            if visibility {
+                Text("Move-Top").font(.largeTitle)
+                    .transition(.move(edge: .top))
+            } else {
+                Text("Move-Leading").font(.largeTitle)
+                    .transition(.move(edge: .leading))
             }
         }
     }
