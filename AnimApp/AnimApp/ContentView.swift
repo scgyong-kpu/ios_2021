@@ -11,8 +11,25 @@ struct ContentView: View {
     @State var rotation = 0.0
     @State var scale: CGFloat = 1.0
     @State var visibility = false
+    @State var spinning = false
     var body: some View {
         VStack {
+            ZStack {
+                Circle()
+                    .stroke(lineWidth: 2)
+                    .foregroundColor(Color.blue)
+                    .frame(width: 200, height: 200, alignment: .center)
+                Image(systemName: "forward.fill")
+                    .font(.largeTitle)
+                    .offset(y: -100)
+                    .rotationEffect(.degrees(spinning ? 360 : 0))
+                    .animation(.linear(duration: 5)
+                                .repeatForever(autoreverses: false)
+                    )
+            }
+            .onAppear {
+                self.spinning = true
+            }
             Toggle(isOn: $visibility.animation(.linear)) {
                 Text("Toggle Text Views").font(.title)
             }.padding()
