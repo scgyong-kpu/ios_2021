@@ -25,13 +25,14 @@ extension Color {
 
 struct AlbumListView: View {
     var body: some View {
-        List {
-            ForEach (AlbumStore.singleton.albums) { album in
-                AlbumCell(album: album)
+        NavigationView {
+            List {
+                ForEach (AlbumStore.singleton.albums) { album in
+                    AlbumCell(album: album)
+                }
             }
+            .navigationBarTitle(Text("Albums"))
         }
-        Text("Hello, world! \(AlbumStore.singleton.albums.count)")
-            .padding()
     }
 }
 
@@ -45,19 +46,21 @@ struct AlbumCell: View {
     let album: Album
     @State var image: Image?
     var body: some View {
-        HStack {
-            loadAlbumImage()
-                .resizable()
-                .frame(width: 56, height: 56, alignment: .center)
-            VStack(alignment: .leading) {
-                Text(album.albumTitle)
-                    .font(.headline)
-                    .foregroundColor(.argb(0xFF283747))
-                    .frame(height: 50)
-                Text(album.artistName)
-                    .font(.caption)
-                    .foregroundColor(.argb(0xFF333333))
-                    .lineLimit(1)
+        NavigationLink(destination: AlbumDetailView(album: album)) {
+            HStack {
+                loadAlbumImage()
+                    .resizable()
+                    .frame(width: 56, height: 56, alignment: .center)
+                VStack(alignment: .leading) {
+                    Text(album.albumTitle)
+                        .font(.headline)
+                        .foregroundColor(.argb(0xFF283747))
+                        .frame(height: 50)
+                    Text(album.artistName)
+                        .font(.caption)
+                        .foregroundColor(.argb(0xFF333333))
+                        .lineLimit(1)
+                }
             }
         }
         //.frame(width: .infinity, height: 60, alignment: .center)
