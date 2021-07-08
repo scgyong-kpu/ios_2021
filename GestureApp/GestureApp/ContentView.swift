@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var magnification = CGFloat(1.0)
     var body: some View {
         let tapGesture = TapGesture(count: 2)
             .onEnded { _ in
@@ -20,6 +21,7 @@ struct ContentView: View {
         let magGesture = MagnificationGesture(minimumScaleDelta: 0)
             .onChanged { value in
                 print("Mag value = \(value)")
+                self.magnification = value
             }
             .onEnded { value in
                 NSLog("MagGesture Ended: \(value)")
@@ -29,6 +31,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .padding()
                 .border(Color.black, width: 2)
+                .scaleEffect(magnification)
                 .gesture(tapGesture)
                 .gesture(magGesture)
         }
