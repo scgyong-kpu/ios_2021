@@ -17,13 +17,20 @@ struct ContentView: View {
             .onEnded { _ in
                 NSLog("Long pressed")
             }
+        let magGesture = MagnificationGesture(minimumScaleDelta: 0)
+            .onChanged { value in
+                print("Mag value = \(value)")
+            }
+            .onEnded { value in
+                NSLog("MagGesture Ended: \(value)")
+            }
         return VStack {
             Image(systemName: "hand.point.right.fill")
                 .font(.largeTitle)
                 .padding()
                 .border(Color.black, width: 2)
                 .gesture(tapGesture)
-                .gesture(longPressGesture)
+                .gesture(magGesture)
         }
     }
 }
