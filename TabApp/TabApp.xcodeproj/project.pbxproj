@@ -15,6 +15,7 @@
 		3D28B70F2696C54500BD2E58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D28B70D2696C54500BD2E58 /* LaunchScreen.storyboard */; };
 		3D28B71A2696C54600BD2E58 /* TabAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28B7192696C54600BD2E58 /* TabAppTests.swift */; };
 		3D28B7252696C54600BD2E58 /* TabAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28B7242696C54600BD2E58 /* TabAppUITests.swift */; };
+		3D28B7332696C81900BD2E58 /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28B7322696C81900BD2E58 /* SecondTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3D28B7202696C54600BD2E58 /* TabAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D28B7242696C54600BD2E58 /* TabAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAppUITests.swift; sourceTree = "<group>"; };
 		3D28B7262696C54600BD2E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D28B7322696C81900BD2E58 /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3D28B7022696C54200BD2E58 /* AppDelegate.swift */,
 				3D28B7042696C54200BD2E58 /* SceneDelegate.swift */,
 				3D28B7062696C54200BD2E58 /* ContentView.swift */,
+				3D28B7322696C81900BD2E58 /* SecondTabView.swift */,
 				3D28B7082696C54500BD2E58 /* Assets.xcassets */,
 				3D28B70D2696C54500BD2E58 /* LaunchScreen.storyboard */,
 				3D28B7102696C54500BD2E58 /* Info.plist */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D28B7332696C81900BD2E58 /* SecondTabView.swift in Sources */,
 				3D28B7032696C54200BD2E58 /* AppDelegate.swift in Sources */,
 				3D28B7052696C54200BD2E58 /* SceneDelegate.swift in Sources */,
 				3D28B7072696C54200BD2E58 /* ContentView.swift in Sources */,
