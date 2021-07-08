@@ -38,10 +38,7 @@ struct AlbumListView: View {
         }
     }
     func deleteAlbum(at offsets: IndexSet) {
-        for index in offsets {
-            AlbumStore.singleton.albums.remove(at: index)
-        }
-        print("offsets=\(offsets)")
+        AlbumStore.singleton.albums.remove(atOffsets: offsets)
     }
     func moveAlbum(from src: IndexSet, to dst: Int) {
         
