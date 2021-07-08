@@ -14,9 +14,9 @@ struct Album: Codable {
 struct AlbumData: Codable {
     var albums: [Album]
 }
-class AlbumStore {
+class AlbumStore: ObservableObject {
     static let singleton = AlbumStore()
-    var albums = [Album]()
+    @Published var albums = [Album]()
     func load() {
         guard let url = Bundle.main.url(forResource: "res/albums.json", withExtension: "") else {
             print("albums.json not found !!")
