@@ -33,8 +33,12 @@ struct ContentView: View {
                         .gesture(gesture)
                 }
             }.aspectRatio(0.5, contentMode: .fit)
-        }
-        //.frame(width: 200, height: 400, alignment: .center)
+        }.background(
+            LinearGradient(gradient: Gradient(
+                            colors: [.white, .blue.opacity(0.5)]),
+                           startPoint: .topLeading, endPoint: .bottomTrailing
+            ).edgesIgnoringSafeArea(.all)
+        )
     }
 }
 
