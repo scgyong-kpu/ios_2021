@@ -7,12 +7,13 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @ObservedObject var game = MemoryGame()
+    
     var body: some View {
-        VStack {
-            CardView(prefix: "f", number: 1, count: 8, open: true)
-            Text("Hello, world!")
-                .padding()
+        GridStack(rows: 6, columns: 3) { row, col in
+            CardView(prefix: "f", number: game.number(row: row, col: col), count: 8, open: game.state(row: row, col: col) == .open)
         }
     }
 }

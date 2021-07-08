@@ -24,7 +24,7 @@ struct CardView: View {
         if !open { return prefix + "_back" }
         let fidx: Int = frameIndex
         let str = prefix + String(format: "_%02d_%02d", number, fidx)
-        print(str)
+        //print(str)
         return str
     }
 }
