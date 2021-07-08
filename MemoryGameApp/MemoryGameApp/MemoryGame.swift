@@ -17,6 +17,8 @@ struct Card {
 }
 
 class MemoryGame: ObservableObject {
+    static let rows = 6
+    static let cols = 3
     var openIndex: Int?
 
     var count = 0
@@ -28,7 +30,8 @@ class MemoryGame: ObservableObject {
     }
     func start() {
         cards = []
-        for i in 1...9 {
+        let max_num = MemoryGame.cols * MemoryGame.rows / 2
+        for i in 1...max_num {
             cards.append(Card(cardState: .closed, number: i))
             cards.append(Card(cardState: .closed, number: i))
             count += 2
@@ -37,17 +40,16 @@ class MemoryGame: ObservableObject {
         flips = 0
     }
     func card(row: Int, col: Int) -> Card {
-        cards[row * 3 + col]
+        cards[row * MemoryGame.cols + col]
     }
     func state(row: Int, col: Int) -> CardState {
-        cards[row * 3 + col].cardState
+        cards[row * MemoryGame.cols + col].cardState
     }
     func number(row: Int, col: Int) -> Int {
-//        print(row, col, row * 3 + col + 1)
-        return cards[row * 3 + col].number
+        return cards[row * MemoryGame.cols + col].number
     }
     func toggle(row: Int, col: Int) {
-        let index = row * 3 + col
+        let index = row * MemoryGame.cols + col
         let card = cards[index]
         
         if card.cardState != .closed { return }
