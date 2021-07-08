@@ -17,6 +17,7 @@
 		3DF87F3426975C8F002FF89F /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF87F3326975C8F002FF89F /* GridStack.swift */; };
 		3DF87F362697624C002FF89F /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF87F352697624C002FF89F /* MemoryGame.swift */; };
 		3DF87F382697B7A2002FF89F /* ImageAssetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF87F372697B7A2002FF89F /* ImageAssetHelper.swift */; };
+		3DF87F3C2697BA5C002FF89F /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF87F3B2697BA5C002FF89F /* MainMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3DF87F3326975C8F002FF89F /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
 		3DF87F352697624C002FF89F /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		3DF87F372697B7A2002FF89F /* ImageAssetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssetHelper.swift; sourceTree = "<group>"; };
+		3DF87F3B2697BA5C002FF89F /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		3DF87F2526974473002FF89F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				3DF87F3B2697BA5C002FF89F /* MainMenuView.swift */,
 				3DF87F2626974473002FF89F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -159,6 +162,7 @@
 			files = (
 				3DF87F362697624C002FF89F /* MemoryGame.swift in Sources */,
 				3DF87F382697B7A2002FF89F /* ImageAssetHelper.swift in Sources */,
+				3DF87F3C2697BA5C002FF89F /* MainMenuView.swift in Sources */,
 				3DF87F1E26974471002FF89F /* AppDelegate.swift in Sources */,
 				3DF87F2026974471002FF89F /* SceneDelegate.swift in Sources */,
 				3DF87F32269750A2002FF89F /* CardView.swift in Sources */,
