@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct ContentView: View {
+    let prefix: String
     @ObservedObject var game = MemoryGame()
     @State var showsRestartAlert = false
     
@@ -33,7 +34,7 @@ struct ContentView: View {
                                 showsRestartAlert = true
                             }
                         }
-                    CardView(prefix: "f", number: card.number, open: card.cardState == .open)
+                    CardView(prefix: prefix, number: card.number, open: card.cardState == .open)
                         .gesture(gesture)
                 }
             }
@@ -62,11 +63,14 @@ struct ContentView: View {
                 secondaryButton: .cancel()
             )
         }
+        .navigationBarTitle("", displayMode: .inline)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(prefix: "f")
     }
 }
