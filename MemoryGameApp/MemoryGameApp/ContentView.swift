@@ -13,12 +13,17 @@ struct ContentView: View {
     
     var body: some View {
         GridStack(rows: 6, columns: 3) { row, col in
-            CardView(prefix: "f", number: game.number(row: row, col: col), count: 8, open: game.state(row: row, col: col) == .open)
-                .gesture(TapGesture()
-                            .onEnded { _ in
-                                game.toggle(row: row, col: col)
-                            }
-                )
+            let card = game.card(row: row, col: col)
+            if card.cardState == .removed {
+                Text("Removed")
+            } else {
+                let gesture = card.cardState == .open ? nil : TapGesture()
+                    .onEnded { _ in
+                        game.toggle(row: row, col: col)
+                    }
+                CardView(prefix: "f", number: card.number, count: 8, open: card.cardState == .open)
+                    .gesture(gesture)
+            }
         }
     }
 }
