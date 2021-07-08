@@ -20,8 +20,8 @@ struct ContentView: View {
                 Spacer()
                 Text("Flips: \(game.flips)")
             }
-            .padding(.horizontal)
-            GridStack(rows: 6, columns: 3) { row, col in
+            .padding()
+            GridStack(rows: MemoryGame.rows, columns: MemoryGame.cols) { row, col in
                 let card = game.card(row: row, col: col)
                 if card.cardState == .removed {
                     Text("Removed")
@@ -36,14 +36,18 @@ struct ContentView: View {
                     CardView(prefix: "f", number: card.number, count: 8, open: card.cardState == .open)
                         .gesture(gesture)
                 }
-            }.aspectRatio(0.5, contentMode: .fit)
+            }
+            .aspectRatio(CGSize(width: MemoryGame.cols, height: MemoryGame.rows), contentMode: ContentMode.fit)
+            Spacer()
             Button(action: { showsRestartAlert = true }) {
                 Text("Restart game")
                     .padding(.horizontal, 30)
                     .padding(.vertical, 5)
                     .background(Capsule().stroke(lineWidth: 2.0))
-            }.padding(.bottom, 10)
-        }.background(
+            }
+            Spacer()
+        }
+        .background(
             LinearGradient(gradient: Gradient(
                             colors: [.white, .blue.opacity(0.5)]),
                            startPoint: .topLeading, endPoint: .bottomTrailing

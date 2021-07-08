@@ -17,8 +17,8 @@ struct Card {
 }
 
 class MemoryGame: ObservableObject {
-    static let rows = 6
-    static let cols = 3
+    static let rows = 5
+    static let cols = 4
     var openIndex: Int?
 
     var count = 0
