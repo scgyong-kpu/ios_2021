@@ -16,6 +16,8 @@ struct CardView: View {
     var timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     var body: some View {
         Image(self.imageName)
+            .resizable()
+            .aspectRatio(1, contentMode: .fit)
             .onReceive(timer) { _ in
                 frameIndex = frameIndex < count ? frameIndex + 1 : 1
             }

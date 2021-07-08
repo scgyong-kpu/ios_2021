@@ -20,6 +20,8 @@ class MemoryGame: ObservableObject {
     var openIndex: Int?
     
     @Published var cards: [Card] = []
+    @Published var flips = 0
+    
     init() {
         start()
     }
@@ -29,9 +31,8 @@ class MemoryGame: ObservableObject {
             cards.append(Card(cardState: .closed, number: i))
             cards.append(Card(cardState: .closed, number: i))
         }
-        print("before:", cards)
         cards.shuffle()
-        print("after:", cards)
+        flips = 0
     }
     func card(row: Int, col: Int) -> Card {
         cards[row * 3 + col]
@@ -47,28 +48,24 @@ class MemoryGame: ObservableObject {
         let index = row * 3 + col
         let card = cards[index]
         
-        switch (card.cardState) {
-        case .closed:
-            cards[index].cardState = .open
-            guard let oidx = openIndex else {
-                openIndex = index
-                break
-            }
-            let openCard = cards[oidx]
-            if openCard.number != card.number {
-                print("Different card: \(index) - \(oidx)")
-                openIndex = index
-                cards[oidx].cardState = .closed
-                break
-            }
-            remove(at: index)
-            remove(at: openIndex!)
-            self.openIndex = nil
-        case .open:
-            cards[index].cardState = .closed
-        default:
-            break
+        if card.cardState != .closed { return }
+
+        cards[index].cardState = .open
+        guard let oidx = openIndex else {
+            openIndex = index
+            return
         }
+        let openCard = cards[oidx]
+        if openCard.number != card.number {
+            print("Different card: \(index) - \(oidx)")
+            openIndex = index
+            cards[oidx].cardState = .closed
+            flips += 1
+            return
+        }
+        remove(at: index)
+        remove(at: openIndex!)
+        self.openIndex = nil
     }
     func remove(at index: Int) {
         print("Removing \(index)")

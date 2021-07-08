@@ -38,5 +38,6 @@ struct GridStack_Previews: PreviewProvider {
         GridStack(rows: 6, columns: 3) { row, column in
             Text("Row:\(row),Col:\(column)")
         }
+        .frame(width:200, height:500)
     }
 }
