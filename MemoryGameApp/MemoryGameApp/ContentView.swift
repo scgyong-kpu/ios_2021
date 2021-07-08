@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var game = MemoryGame()
+    @State var showsRestartAlert = false
     
     var body: some View {
         VStack {
@@ -28,17 +29,35 @@ struct ContentView: View {
                     let gesture = card.cardState == .open ? nil : TapGesture()
                         .onEnded { _ in
                             game.toggle(row: row, col: col)
+                            if game.count == 0 {
+                                showsRestartAlert = true
+                            }
                         }
                     CardView(prefix: "f", number: card.number, count: 8, open: card.cardState == .open)
                         .gesture(gesture)
                 }
             }.aspectRatio(0.5, contentMode: .fit)
+            Button(action: { showsRestartAlert = true }) {
+                Text("Restart game")
+                    .padding(.horizontal, 30)
+                    .padding(.vertical, 5)
+                    .background(Capsule().stroke(lineWidth: 2.0))
+            }.padding(.bottom, 10)
         }.background(
             LinearGradient(gradient: Gradient(
                             colors: [.white, .blue.opacity(0.5)]),
                            startPoint: .topLeading, endPoint: .bottomTrailing
             ).edgesIgnoringSafeArea(.all)
-        )
+        ).alert(isPresented: $showsRestartAlert) {
+            Alert(
+                title: Text("Restart?"),
+                message: Text("Do you want to restart the game?"),
+                primaryButton: .default(Text("Restart")) {
+                    game.start()
+                },
+                secondaryButton: .cancel()
+            )
+        }
     }
 }
 

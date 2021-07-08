@@ -18,7 +18,8 @@ struct Card {
 
 class MemoryGame: ObservableObject {
     var openIndex: Int?
-    
+
+    var count = 0
     @Published var cards: [Card] = []
     @Published var flips = 0
     
@@ -30,6 +31,7 @@ class MemoryGame: ObservableObject {
         for i in 1...9 {
             cards.append(Card(cardState: .closed, number: i))
             cards.append(Card(cardState: .closed, number: i))
+            count += 2
         }
         cards.shuffle()
         flips = 0
@@ -70,6 +72,7 @@ class MemoryGame: ObservableObject {
     }
     func remove(at index: Int) {
         print("Removing \(index)")
+        count -= 1
         cards[index].cardState = .removed
     }
 }
