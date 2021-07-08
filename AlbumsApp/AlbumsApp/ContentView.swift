@@ -60,15 +60,16 @@ struct AlbumCell: View {
                     .lineLimit(1)
             }
         }
+        //.frame(width: .infinity, height: 60, alignment: .center)
     }
     func loadAlbumImage() -> Image {
-        if let image = image {
-            return image
+        if image != nil {
+            print("Already has image for \(album.image)")
+            return image!
         }
-//        if image != nil {
-//            return image!
-//        }
+        //print("Loading \(album.image)...")
         return ImageStore.load(strUrl: album.image) { image in
+            //print("Loaded: \(album.image)")
             self.image = image
         }
     }
@@ -80,6 +81,7 @@ struct AlbumCell_Previews: PreviewProvider {
             AlbumCell(album: Album(albumTitle: "Hello title", artistName: "Hello name", image: "url"))
             AlbumCell(album: Album(albumTitle: "Some very long album title blah blah blah hello world", artistName: "World name", image: "url"))
             AlbumCell(album: Album(albumTitle: "World title", artistName: "A very long artist name World name", image: "url"))
+            AlbumCell(album: Album(albumTitle: "Some very long album title blah blah blah hello world", artistName: "A very long artist name World name and longer and longer", image: "http://scgyong.net/thumbs/slow.php/204_192546.jpg"))
             AlbumCell(album: Album(albumTitle: "Some very long album title blah blah blah hello world", artistName: "A very long artist name World names jfksd fklsdj fsjd klfjdsklfj dslkjf klsdj fkldsj fklsj dklfj sklfj kldsjf klsdj kl", image: "url"))
         }
     }
