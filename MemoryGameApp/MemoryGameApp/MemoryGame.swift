@@ -38,4 +38,16 @@ class MemoryGame: ObservableObject {
 //        print(row, col, row * 3 + col + 1)
         return cards[row * 3 + col].number
     }
+    func toggle(row: Int, col: Int) {
+        var card = cards[row * 3 + col]
+        switch (card.cardState) {
+        case .closed:
+            card.cardState = .open
+        case .open:
+            card.cardState = .closed
+        default:
+            break
+        }
+        cards[row * 3 + col] = card
+    }
 }
