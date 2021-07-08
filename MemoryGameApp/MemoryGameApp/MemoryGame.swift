@@ -52,6 +52,7 @@ class MemoryGame: ObservableObject {
 
         cards[index].cardState = .open
         guard let oidx = openIndex else {
+            flips += 1
             openIndex = index
             return
         }
