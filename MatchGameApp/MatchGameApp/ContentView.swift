@@ -12,6 +12,11 @@ struct ContentView: View {
     var body: some View {
         GridStack(rows: MemoryGame.dimen.rows, columns: MemoryGame.dimen.cols) { row, col in
             CardView(card: game.card(row: row, col: col))
+                .gesture(TapGesture()
+                            .onEnded { _ in
+                                game.toggle(row:row, col:col)
+                            }
+                )
         }
     }
 }

@@ -32,4 +32,8 @@ class MemoryGame {
     func card(row: Int, col: Int) -> Card {
         cards[row * dimen.cols + col]
     }
+    func toggle(row: Int, col: Int) {
+        let index = row * dimen.cols + col
+        cards[index].open.toggle()
+    }
 }
