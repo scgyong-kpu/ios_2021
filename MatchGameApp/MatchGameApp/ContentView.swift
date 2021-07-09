@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var game = MemoryGame()
+    @ObservedObject var game = MemoryGame()
     var body: some View {
         GridStack(rows: MemoryGame.dimen.rows, columns: MemoryGame.dimen.cols) { row, col in
             CardView(card: game.card(row: row, col: col))

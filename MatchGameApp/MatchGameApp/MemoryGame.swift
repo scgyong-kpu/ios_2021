@@ -12,12 +12,12 @@ struct Card {
     let number: Int
 }
 
-class MemoryGame {
+class MemoryGame: ObservableObject {
     struct dimen {
         static let cols = 3
         static let rows = 6
     }
-    var cards: [Card] = []
+    @Published var cards: [Card] = []
     init() {
         start()
     }
