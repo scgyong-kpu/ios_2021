@@ -11,6 +11,7 @@ struct ContentView: View {
     let prefix: String
     @ObservedObject var game = MemoryGame()
     @State var showsRestartAlert = false
+    @Environment(\.presentationMode) var present
     
     var body: some View {
         VStack {
@@ -22,7 +23,7 @@ struct ContentView: View {
             }
             .padding()
             GridStack(rows: MemoryGame.dimen.rows, columns: MemoryGame.dimen.cols) { row, col in
-                CardView(card: game.card(row: row, col: col))
+                CardView(card: game.card(row: row, col: col), prefix: prefix)
                     .gesture(TapGesture()
                                 .onEnded { _ in
                                     game.toggle(row:row, col:col)
@@ -30,15 +31,31 @@ struct ContentView: View {
                     )
             }
             .aspectRatio(CGSize(width: MemoryGame.dimen.cols, height: MemoryGame.dimen.rows), contentMode: .fit)
-            Button(action: {
-                showsRestartAlert = true
-            }) {
-                Text("Restart")
-                    .padding(.horizontal)
-                    .padding(.vertical, 5)
-                    .background(
-                        Capsule().stroke(lineWidth: 2.0)
-                    )
+            Spacer()
+            HStack {
+                Spacer()
+                Button(action: {
+                    present.wrappedValue.dismiss()
+                }) {
+                    Text("Back")
+                        .padding(.horizontal)
+                        .padding(.vertical, 5)
+                        .background(
+                            Capsule().stroke(lineWidth: 2.0)
+                        )
+                }
+                Spacer()
+                Button(action: {
+                    showsRestartAlert = true
+                }) {
+                    Text("Restart")
+                        .padding(.horizontal)
+                        .padding(.vertical, 5)
+                        .background(
+                            Capsule().stroke(lineWidth: 2.0)
+                        )
+                }
+                Spacer()
             }
         }
         .background(

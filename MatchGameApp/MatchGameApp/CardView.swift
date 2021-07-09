@@ -9,9 +9,10 @@ import SwiftUI
 
 struct CardView: View {
     let card: Card
+    let prefix: String
     var body: some View {
         if let open =  card.open {
-            Image(open ? String(format:"f_%02d_01", card.number) : "f_back")
+            Image(open ? String(format:"\(prefix)_%02d_01", card.number) : "\(prefix)_back")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
         } else {
@@ -25,11 +26,19 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        VStack {
-            CardView(card: Card(open: false, number: 1))
-            CardView(card: Card(open: nil, number: 1))
-            CardView(card: Card(open: true, number: 1))
-            CardView(card: Card(open: true, number: 2))
+        HStack {
+            VStack {
+                CardView(card: Card(open: false, number: 1), prefix: "f")
+                CardView(card: Card(open: nil, number: 1), prefix: "f")
+                CardView(card: Card(open: true, number: 1), prefix: "f")
+                CardView(card: Card(open: true, number: 2), prefix: "f")
+            }
+            VStack {
+                CardView(card: Card(open: false, number: 1), prefix: "t")
+                CardView(card: Card(open: nil, number: 1), prefix: "t")
+                CardView(card: Card(open: true, number: 1), prefix: "t")
+                CardView(card: Card(open: true, number: 2), prefix: "t")
+            }
         }
     }
 }
