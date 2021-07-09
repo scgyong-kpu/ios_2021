@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainMenuView: View {
-    let resourcePrefixes = [ "f", "t" ]
+    let resourcePrefixes = [ "f", "t", "f" ]
     var body: some View {
         NavigationView {
             VStack {
@@ -47,7 +47,7 @@ struct MenuItemView: View {
                 .padding(.leading)
             Spacer()
             NavigationLink(
-                destination: Text("prefix:\(prefix)"),
+                destination: ContentView(prefix: prefix),
                 label: {
                     Text("Play Game")
                         .padding()

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    let prefix: String
     @ObservedObject var game = MemoryGame()
     @State var showsRestartAlert = false
     
@@ -28,6 +29,7 @@ struct ContentView: View {
                                 }
                     )
             }
+            .aspectRatio(CGSize(width: MemoryGame.dimen.cols, height: MemoryGame.dimen.rows), contentMode: .fit)
             Button(action: {
                 showsRestartAlert = true
             }) {
@@ -62,6 +64,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(prefix: "f")
     }
 }
