@@ -17,6 +17,7 @@ class MemoryGame: ObservableObject {
         static let cols = 3
         static let rows = 6
     }
+    var openIndex: Int?
     @Published var cards: [Card] = []
     init() {
         start()
@@ -25,7 +26,7 @@ class MemoryGame: ObservableObject {
         cards = []
         let max_num = dimen.cols * dimen.rows / 2
         for n in 1 ... max_num {
-            cards.append(Card(open: true, number: n))
+            cards.append(Card(open: false, number: n))
             cards.append(Card(open: false, number: n))
         }
     }
@@ -34,6 +35,16 @@ class MemoryGame: ObservableObject {
     }
     func toggle(row: Int, col: Int) {
         let index = row * dimen.cols + col
+        let card = cards[index]
+        if card.open { return }
+        
         cards[index].open.toggle()
+        guard let oidx = openIndex else {
+            openIndex = index
+            return
+        }
+        
+        cards[oidx].open = false
+        openIndex = index
     }
 }
