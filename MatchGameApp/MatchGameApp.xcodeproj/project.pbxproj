@@ -19,6 +19,7 @@
 		3D28B7EB2697E28000BD2E58 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28B7EA2697E28000BD2E58 /* CardView.swift */; };
 		3D28B7ED2697E4B800BD2E58 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28B7EC2697E4B800BD2E58 /* GridStack.swift */; };
 		3D28B7EF26980F3D00BD2E58 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28B7EE26980F3D00BD2E58 /* MainMenuView.swift */; };
+		3D28B7F1269821CB00BD2E58 /* ImageAssetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28B7F0269821CB00BD2E58 /* ImageAssetHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		3D28B7EA2697E28000BD2E58 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3D28B7EC2697E4B800BD2E58 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
 		3D28B7EE26980F3D00BD2E58 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		3D28B7F0269821CB00BD2E58 /* ImageAssetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssetHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				3D28B7C02697DEDB00BD2E58 /* Preview Content */,
 				3D28B7E82697E01100BD2E58 /* MemoryGame.swift */,
 				3D28B7EE26980F3D00BD2E58 /* MainMenuView.swift */,
+				3D28B7F0269821CB00BD2E58 /* ImageAssetHelper.swift */,
 				3D28B7BC2697DED400BD2E58 /* ContentView.swift */,
 				3D28B7EC2697E4B800BD2E58 /* GridStack.swift */,
 				3D28B7EA2697E28000BD2E58 /* CardView.swift */,
@@ -282,6 +285,7 @@
 				3D28B7EF26980F3D00BD2E58 /* MainMenuView.swift in Sources */,
 				3D28B7BB2697DED400BD2E58 /* SceneDelegate.swift in Sources */,
 				3D28B7ED2697E4B800BD2E58 /* GridStack.swift in Sources */,
+				3D28B7F1269821CB00BD2E58 /* ImageAssetHelper.swift in Sources */,
 				3D28B7E92697E01100BD2E58 /* MemoryGame.swift in Sources */,
 				3D28B7BD2697DED400BD2E58 /* ContentView.swift in Sources */,
 				3D28B7EB2697E28000BD2E58 /* CardView.swift in Sources */,

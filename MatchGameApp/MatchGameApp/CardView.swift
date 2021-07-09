@@ -10,7 +10,12 @@ import SwiftUI
 struct CardView: View {
     let card: Card
     let prefix: String
-    let count = 8
+    let count: Int
+    init(card: Card, prefix: String) {
+        self.card = card
+        self.prefix = prefix
+        self.count = ImageAssetHelper.count(prefix: prefix, number: card.number)
+    }
     @State var frameIndex = 1
     var timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     var body: some View {
