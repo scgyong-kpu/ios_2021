@@ -79,6 +79,10 @@ struct ContentView: View {
         .navigationBarTitle("", displayMode: .inline)
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
+        .onAppear() {
+            NSLog("onAppear")
+            game.start()
+        }
     }
 }
 
