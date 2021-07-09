@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    var game = MemoryGame()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        GridStack(rows: MemoryGame.dimen.rows, columns: MemoryGame.dimen.cols) { row, col in
+            CardView(card: game.card(row: row, col: col))
+        }
     }
 }
 

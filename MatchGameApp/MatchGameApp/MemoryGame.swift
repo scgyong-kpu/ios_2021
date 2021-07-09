@@ -25,11 +25,11 @@ class MemoryGame {
         cards = []
         let max_num = dimen.cols * dimen.rows / 2
         for n in 1 ... max_num {
-            cards.append(Card(open: false, number: n))
+            cards.append(Card(open: true, number: n))
             cards.append(Card(open: false, number: n))
         }
     }
-    func card(col: Int, row: Int) -> Card {
+    func card(row: Int, col: Int) -> Card {
         cards[row * dimen.cols + col]
     }
 }

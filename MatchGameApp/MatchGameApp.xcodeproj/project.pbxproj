@@ -107,14 +107,14 @@
 			children = (
 				3D28B7B82697DED400BD2E58 /* AppDelegate.swift */,
 				3D28B7BA2697DED400BD2E58 /* SceneDelegate.swift */,
-				3D28B7BC2697DED400BD2E58 /* ContentView.swift */,
 				3D28B7BE2697DEDB00BD2E58 /* Assets.xcassets */,
 				3D28B7C32697DEDB00BD2E58 /* LaunchScreen.storyboard */,
 				3D28B7C62697DEDB00BD2E58 /* Info.plist */,
 				3D28B7C02697DEDB00BD2E58 /* Preview Content */,
 				3D28B7E82697E01100BD2E58 /* MemoryGame.swift */,
-				3D28B7EA2697E28000BD2E58 /* CardView.swift */,
+				3D28B7BC2697DED400BD2E58 /* ContentView.swift */,
 				3D28B7EC2697E4B800BD2E58 /* GridStack.swift */,
+				3D28B7EA2697E28000BD2E58 /* CardView.swift */,
 			);
 			path = MatchGameApp;
 			sourceTree = "<group>";
