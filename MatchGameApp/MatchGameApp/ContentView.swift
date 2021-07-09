@@ -59,6 +59,9 @@ struct ContentView: View {
                 secondaryButton: .cancel()
             )
         }
+        .navigationBarTitle("", displayMode: .inline)
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
