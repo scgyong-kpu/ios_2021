@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var game = MemoryGame()
+    @State var showsRestartAlert = false
+    
     var body: some View {
         VStack {
             HStack {
@@ -27,7 +29,7 @@ struct ContentView: View {
                     )
             }
             Button(action: {
-                game.start()
+                showsRestartAlert = true
             }) {
                 Text("Restart")
                     .padding(.horizontal)
@@ -36,6 +38,16 @@ struct ContentView: View {
                         Capsule().stroke(lineWidth: 2.0)
                     )
             }
+        }
+        .alert(isPresented: $showsRestartAlert) {
+            Alert(
+                title: Text("Restart?"),
+                message: Text("Do you want to restart the game?"),
+                primaryButton: .default(Text("Restart")) {
+                    game.start()
+                },
+                secondaryButton: .cancel()
+            )
         }
     }
 }
