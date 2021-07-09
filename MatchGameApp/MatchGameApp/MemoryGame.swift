@@ -19,6 +19,7 @@ class MemoryGame: ObservableObject {
     }
     var openIndex: Int?
     @Published var cards: [Card] = []
+    @Published var flips = 0
     init() {
         start()
     }
@@ -31,6 +32,8 @@ class MemoryGame: ObservableObject {
         }
 //        cards  =  cards.shuffled()
         cards.shuffle()
+        flips = 0
+        openIndex = nil
     }
     func card(row: Int, col: Int) -> Card {
         cards[row * dimen.cols + col]
@@ -42,6 +45,7 @@ class MemoryGame: ObservableObject {
         
         cards[index].open!.toggle()
         guard let oidx = openIndex else {
+            flips += 1
             openIndex = index
             return
         }
@@ -50,6 +54,7 @@ class MemoryGame: ObservableObject {
         if openCard.number != card.number {
             cards[oidx].open = false
             openIndex = index
+            flips += 1
             return
         }
         
