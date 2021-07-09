@@ -16,6 +16,8 @@
 		3D28B7D02697DEDB00BD2E58 /* MatchGameAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28B7CF2697DEDB00BD2E58 /* MatchGameAppTests.swift */; };
 		3D28B7DB2697DEDB00BD2E58 /* MatchGameAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28B7DA2697DEDB00BD2E58 /* MatchGameAppUITests.swift */; };
 		3D28B7E92697E01100BD2E58 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28B7E82697E01100BD2E58 /* MemoryGame.swift */; };
+		3D28B7EB2697E28000BD2E58 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28B7EA2697E28000BD2E58 /* CardView.swift */; };
+		3D28B7ED2697E4B800BD2E58 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28B7EC2697E4B800BD2E58 /* GridStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3D28B7DA2697DEDB00BD2E58 /* MatchGameAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchGameAppUITests.swift; sourceTree = "<group>"; };
 		3D28B7DC2697DEDB00BD2E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D28B7E82697E01100BD2E58 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		3D28B7EA2697E28000BD2E58 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3D28B7EC2697E4B800BD2E58 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				3D28B7C62697DEDB00BD2E58 /* Info.plist */,
 				3D28B7C02697DEDB00BD2E58 /* Preview Content */,
 				3D28B7E82697E01100BD2E58 /* MemoryGame.swift */,
+				3D28B7EA2697E28000BD2E58 /* CardView.swift */,
+				3D28B7EC2697E4B800BD2E58 /* GridStack.swift */,
 			);
 			path = MatchGameApp;
 			sourceTree = "<group>";
@@ -271,8 +277,10 @@
 			files = (
 				3D28B7B92697DED400BD2E58 /* AppDelegate.swift in Sources */,
 				3D28B7BB2697DED400BD2E58 /* SceneDelegate.swift in Sources */,
+				3D28B7ED2697E4B800BD2E58 /* GridStack.swift in Sources */,
 				3D28B7E92697E01100BD2E58 /* MemoryGame.swift in Sources */,
 				3D28B7BD2697DED400BD2E58 /* ContentView.swift in Sources */,
+				3D28B7EB2697E28000BD2E58 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

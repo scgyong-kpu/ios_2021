@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct CardView: View {
+    let card: Card
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(card.open ? String(format:"f_%02d_01", card.number) : "f_back")
+            .resizable()
+            .aspectRatio(1, contentMode: .fit)
     }
 }
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        VStack {
+            CardView(card: Card(open: false, number: 1))
+            CardView(card: Card(open: true, number: 1))
+            CardView(card: Card(open: true, number: 2))
+        }
     }
 }
