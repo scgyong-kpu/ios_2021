@@ -20,15 +20,18 @@ class MemoryGame: ObservableObject {
     var openIndex: Int?
     @Published var cards: [Card] = []
     @Published var flips = 0
+    @Published var count = 0
     init() {
         start()
     }
     func start() {
         cards = []
+        count = 0
         let max_num = dimen.cols * dimen.rows / 2
         for n in 1 ... max_num {
             cards.append(Card(open: false, number: n))
             cards.append(Card(open: false, number: n))
+            count += 2
         }
 //        cards  =  cards.shuffled()
         cards.shuffle()
@@ -65,5 +68,6 @@ class MemoryGame: ObservableObject {
     
     func remove(at index: Int)  {
         cards[index].open = nil
+        count -= 1
     }
 }

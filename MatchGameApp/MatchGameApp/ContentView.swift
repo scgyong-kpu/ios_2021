@@ -27,6 +27,9 @@ struct ContentView: View {
                     .gesture(TapGesture()
                                 .onEnded { _ in
                                     game.toggle(row:row, col:col)
+                                    if game.count == 0 {
+                                        showsRestartAlert = true
+                                    }
                                 }
                     )
             }
