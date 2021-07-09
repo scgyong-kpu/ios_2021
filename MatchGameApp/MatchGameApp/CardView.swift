@@ -10,11 +10,17 @@ import SwiftUI
 struct CardView: View {
     let card: Card
     let prefix: String
+    let count = 8
+    @State var frameIndex = 1
+    var timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     var body: some View {
         if let open =  card.open {
-            Image(open ? String(format:"\(prefix)_%02d_01", card.number) : "\(prefix)_back")
+            Image(open ? String(format:"\(prefix)_%02d_%02d", card.number, frameIndex) : "\(prefix)_back")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .onReceive(timer) { _ in
+                    frameIndex = frameIndex < count ? frameIndex + 1 : 1
+                }
         } else {
             Image(systemName: "x.circle")
                 .resizable()
