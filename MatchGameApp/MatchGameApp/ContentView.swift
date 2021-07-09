@@ -39,6 +39,14 @@ struct ContentView: View {
                     )
             }
         }
+        .background(
+            LinearGradient(
+                gradient: Gradient(
+                    colors: [.white, .blue.opacity(0.5)]),
+                startPoint: .topLeading,
+                endPoint: .trailing
+            ).edgesIgnoringSafeArea(.all)
+        )
         .alert(isPresented: $showsRestartAlert) {
             Alert(
                 title: Text("Restart?"),
