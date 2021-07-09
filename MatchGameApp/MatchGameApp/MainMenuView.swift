@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainMenuView: View {
-    let resourcePrefixes = [ "f", "t", "f" ]
+    let resourcePrefixes = [ "f", "t" ]
     var body: some View {
         NavigationView {
             VStack {

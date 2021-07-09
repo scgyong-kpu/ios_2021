@@ -14,8 +14,8 @@ struct Card {
 
 class MemoryGame: ObservableObject {
     struct dimen {
-        static let cols = 3
-        static let rows = 6
+        static let cols = 4
+        static let rows = 5
     }
     var openIndex: Int?
     @Published var cards: [Card] = []

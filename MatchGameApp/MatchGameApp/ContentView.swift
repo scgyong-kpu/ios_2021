@@ -57,6 +57,7 @@ struct ContentView: View {
                 }
                 Spacer()
             }
+            Spacer()
         }
         .background(
             LinearGradient(
