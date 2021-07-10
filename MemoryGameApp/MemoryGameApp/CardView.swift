@@ -47,3 +47,31 @@ struct CardView_Previews: PreviewProvider {
         }
     }
 }
+
+struct SFSymbolPreview: PreviewProvider {
+    static var previews: some View {
+        List{
+            ForEach(symbols, id: \.self){ symbol in
+                    Image(systemName: symbol)
+                        .renderingMode(.original)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.all, 10)
+            }
+            .background(Color.gray)
+        }
+    }
+}
+
+let symbols: [String] = [
+    "sun.max.fill",
+     "sunrise.fill",
+     "cloud.sun.rain.fill",
+     "cloud.heavyrain.fill",
+     "thermometer.sun.fill",
+     "thermometer.snowflake",
+     "exclamationmark.triangle.fill",
+     "star.fill",
+    "pencil.tip.crop.circle.badge.plus"
+]
+
