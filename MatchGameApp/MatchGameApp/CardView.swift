@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CardView: View {
+    static let intervals = [
+        "t": 20.0
+    ]
     let card: Card
     let prefix: String
     let count: Int
@@ -15,6 +18,9 @@ struct CardView: View {
         self.card = card
         self.prefix = prefix
         self.count = ImageAssetHelper.count(prefix: prefix, number: card.number)
+        if let fps = CardView.intervals[prefix] {
+            timer = Timer.publish(every: 1.0 / fps, on: .main, in: .common).autoconnect()
+        }
     }
     @State var frameIndex = 1
     var timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
@@ -49,6 +55,27 @@ struct CardView_Previews: PreviewProvider {
                 CardView(card: Card(open: nil, number: 1), prefix: "t")
                 CardView(card: Card(open: true, number: 1), prefix: "t")
                 CardView(card: Card(open: true, number: 2), prefix: "t")
+            }
+        }
+    }
+}
+
+struct AllCardsInList_Preview: PreviewProvider {
+    static var previews: some View {
+        List {
+            HStack {
+                CardView(card: Card(open: false, number: 1), prefix: "f")
+                CardView(card: Card(open: false, number: 1), prefix: "t")
+            }
+            HStack {
+                CardView(card: Card(open: nil, number: 1), prefix: "f")
+                CardView(card: Card(open: nil, number: 1), prefix: "t")
+            }
+            ForEach (1 ... 10, id: \.self) { number in
+                HStack {
+                    CardView(card: Card(open: true, number: number), prefix: "f")
+                    CardView(card: Card(open: true, number: number), prefix: "t")
+                }
             }
         }
     }
